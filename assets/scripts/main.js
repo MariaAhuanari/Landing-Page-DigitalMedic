@@ -5,6 +5,7 @@ const navItem1 = document.querySelector(".item1");
 const navItem2 = document.querySelector(".item2");
 const navItem3 = document.querySelector(".item3");
 const navItem4 = document.querySelector(".item4");
+const navItem5 = document.querySelector(".item4");
 
 
 navToggle.addEventListener("click", () => {
@@ -28,5 +29,9 @@ navItem3.addEventListener("click", () => {
 
 
 navItem4.addEventListener("click", () => {
+    navMenu.classList.remove("nav-menu_visible");
+});
+
+navItem5.addEventListener("click", () => {
     navMenu.classList.remove("nav-menu_visible");
 });

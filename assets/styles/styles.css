@@ -3,8 +3,13 @@
     font-family: ibm-plex-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 
+html
+{
+    scroll-behavior: smooth !important;
+}
 
 ul, li, nav
 {
@@ -301,6 +306,18 @@ header nav li
     max-width: 35vw;
 }
 
+@media (max-width: 750px) {
+    .hero-section .left{
+        display: flex;
+        align-items: center;
+        color: white;
+        min-width: 30%;
+        margin-left: 1vw;
+    }
+
+
+}
+
 /*Services Section*/
 #patient-services {
     margin-top: 40px;
@@ -478,9 +495,9 @@ section h1.title
 }
 
 .physiotherapist .right img{
-    margin-right: 10vw;
-    margin-left: 12vw;
-    height: 30vw;
+
+    height: 25vw;
+
 }
 
 .physiotherapist .left{
@@ -594,13 +611,13 @@ section h1.title
 #testcards {
 
     box-sizing: border-box;
-    font-family: ibm-plex-sans, sans-serif;
+    font-fmily: ibm-plex-sans, sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 .slide-container{
     width: 40vw;
     height: 40vw;
@@ -696,6 +713,27 @@ section h1.title
     .swiper-navBtn{
         display: none;
     }
+
+    .slide-container{
+        width: 30vw;
+        height: 20vw;
+
+        padding: 10px 0;
+    }
+
+    .description{
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+    }
+
+    .card-content {
+        padding: 5px;
+    }
+    .card-content h2 {
+        font-size: 14px;
+    }
+
 }
 
 /*About the TEam*/
@@ -781,6 +819,19 @@ h3
         width: 300px;
         margin-top: 25px;
     }
+
+    #about-team img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    h3
+    {
+        text-align: center;
+        color: #3C5BA9;
+        font-size: 14px;
+    }
 }
 @media (max-width: 1300px) and (min-width:800px) {
     #about-team iframe {
@@ -805,6 +856,11 @@ h3
     padding: 20px;
 }
 
+.logo2 img {
+    width: 100px;
+    height: 100px;
+
+}
 .column1
 {
     width: 100%;
